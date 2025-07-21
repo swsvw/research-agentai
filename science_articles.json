@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Gene and RNA Editing: Methods, Enabling Technologies, Applications, and\n  Future Directions",
+    "url": "http://arxiv.org/abs/2409.09057v1",
+    "summary": "Here is a 3-5 line summary of the article:\n\nGene and RNA editing technologies, such as CRISPR, offer innovative therapeutic approaches to detect and treat genetic diseases and viral agents. RNA editing, in particular, provides a temporary and customizable solution by altering nucleoside bases in RNA strands, which can then attach to DNA strands as temporary modifiers. This approach is more cost-effective and flexible compared to permanent DNA editing, and has significant potential for advancing medical treatment."
+  },
+  {
+    "title": "A mathematical model of kinetoplastid mitochondrial gene scrambling\n  advantage",
+    "url": "http://arxiv.org/abs/1307.1163v1",
+    "summary": "Here is a 3-5 line summary of the article:\n\nPan-editing, a complex process of expressing mitochondrial genes in kinetoplastids, is advantageous due to its ability to prevent gene loss through fragment dispersal. This dispersal links non-expressed fragments to essential genes, ensuring their preservation despite intense intraspecific competition. Mathematical modeling reveals that pan-editing can effectively limit gene loss under relaxed selective pressure, with a quasi-linear correlation between dispersal and gene retention."
+  },
+  {
+    "title": "Template-based eukaryotic genome editing directed by SviCas3",
+    "url": "http://arxiv.org/abs/2305.05861v1",
+    "summary": "Here is a 3-5 line summary of the article:\n\nThe SviCas3 enzyme from the Streptomyces virginiae IBL14 subtype I-B-Svi Cas system is a versatile RNA-guided and DNA-guided DNA endonuclease suitable for efficient HDR-directed gene and base editing in eukaryotic cells. Notably, DNA-guided SviCas3 editing is as efficient as RNA-guided editing, and does not require a proto-spacer-adjacent motif. This discovery expands our understanding of CRISPR-Cas systems and provides a new tool for DNA-guided gene editing and base editing."
+  },
+  {
+    "title": "CRISPR-GPT: An LLM Agent for Automated Design of Gene-Editing\n  Experiments",
+    "url": "http://arxiv.org/abs/2404.18021v1",
+    "summary": "Here is a 3-5 line summary of the article:\n\nResearchers have developed CRISPR-GPT, a Large Language Model (LLM) agent that automates and enhances the design of CRISPR-based gene-editing experiments. CRISPR-GPT leverages LLM reasoning to select CRISPR systems, design guide RNAs, and recommend delivery methods and validation experiments. This tool aims to assist non-expert researchers in gene-editing experiments and bridge the gap between beginners and CRISPR genome engineering techniques."
+  },
+  {
+    "title": "The pattern and process of gene family evolution",
+    "url": "http://arxiv.org/abs/1102.2331v1",
+    "summary": "Here is a 3-5 line summary of the article:\n\nResearchers analyzed large-scale databases of homologous gene families to understand gene family evolution. They found that gene family size distributions across different species and domains of life exhibit similar shapes, best described by models where gene death rates exceed birth rates, but new families continually emerge. Additionally, probabilistic reconciliation methods revealed that most birth events in prokaryotes result from gene transfer."
+  }
+]

@@ -1,0 +1,8 @@
+openai
+crewai
+langgraph
+duckduckgo-search
+feedparser
+flask
+fpdf
+python-dotenv
