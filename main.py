@@ -11,11 +11,9 @@ os.environ["OPENAI_API_BASE"] = "https://api.groq.com/openai/v1"
 
 llm = ChatOpenAI(
     temperature=0,
-    model_name="llama3-70b-8192",  # or any model supported by Groq
+    model_name="llama3-70b-8192",
     openai_api_base=os.environ["OPENAI_API_BASE"]
 )
-
-# main.py
 
 from tasks.search_task import run_task
 

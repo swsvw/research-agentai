@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Science Summary Agent</title>
+</head>
+<body>
+    <h2>🔬 Science Summary Agent</h2>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter research topic..." required />
+        <button type="submit">Search</button>
+    </form>
+
+    {% if summaries %}
+        <h3>Results:</h3>
+        <ul>
+            {% for article in summaries %}
+                <li>
+                    <strong><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></strong><br/>
+                    {{ article.summary }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

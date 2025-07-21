@@ -6,3 +6,9 @@ feedparser
 flask
 fpdf
 python-dotenv
+flask
+gunicorn
+requests
+beautifulsoup4
+feedparser
+groq

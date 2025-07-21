@@ -7,7 +7,7 @@ from utils.groq_llm import groq_llm
 
 def fetch_science_articles(query: str):
     print(f"🔎 Searching arXiv for: {query}")
-    encoded_query = quote(query)  # ✅ Safely encode query for URL
+    encoded_query = quote(query)
     search_url = f"http://export.arxiv.org/api/query?search_query=all:{encoded_query}&start=0&max_results=5"
 
     feed = feedparser.parse(search_url)

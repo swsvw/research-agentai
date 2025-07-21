@@ -1,27 +1,27 @@
 [
   {
-    "title": "Gene and RNA Editing: Methods, Enabling Technologies, Applications, and\n  Future Directions",
-    "url": "http://arxiv.org/abs/2409.09057v1",
-    "summary": "Here is a 3-5 line summary of the article:\n\nGene and RNA editing technologies, such as CRISPR, offer innovative therapeutic approaches to detect and treat genetic diseases and viral agents. RNA editing, in particular, provides a temporary and customizable solution by altering nucleoside bases in RNA strands, which can then attach to DNA strands as temporary modifiers. This approach is more cost-effective and flexible compared to permanent DNA editing, and has significant potential for advancing medical treatment."
+    "title": "Determining Multifunctional Genes and Diseases in Human Using Gene\n  Ontology",
+    "url": "http://arxiv.org/abs/1901.04847v1",
+    "summary": "Here is a concise summary of the article:\n\nThis study explores the relationship between multifunctional genes and diseases, building on previous research. By analyzing molecular function annotations from the Gene Ontology, the study aims to improve understanding of gene-disease relationships, ultimately enhancing healthcare, diagnostics, and drug discovery."
   },
   {
-    "title": "A mathematical model of kinetoplastid mitochondrial gene scrambling\n  advantage",
-    "url": "http://arxiv.org/abs/1307.1163v1",
-    "summary": "Here is a 3-5 line summary of the article:\n\nPan-editing, a complex process of expressing mitochondrial genes in kinetoplastids, is advantageous due to its ability to prevent gene loss through fragment dispersal. This dispersal links non-expressed fragments to essential genes, ensuring their preservation despite intense intraspecific competition. Mathematical modeling reveals that pan-editing can effectively limit gene loss under relaxed selective pressure, with a quasi-linear correlation between dispersal and gene retention."
+    "title": "UniEntrezDB: Large-scale Gene Ontology Annotation Dataset and Evaluation\n  Benchmarks with Unified Entrez Gene Identifiers",
+    "url": "http://arxiv.org/abs/2412.12688v1",
+    "summary": "Here is a concise summary of the article:\n\nThe Unified Entrez Gene Identifier Dataset and Benchmarks (UniEntrezDB) is introduced to unify large-scale public Gene Ontology Annotations (GOA) from various databases using unique gene identifiers, addressing the challenge of fragmented gene annotations. This dataset enables comprehensive evaluation of gene embedding performance at gene, protein, and cell levels, enhancing the reliability and applicability of large language models (LLMs) in gene research and other professional settings."
   },
   {
-    "title": "Template-based eukaryotic genome editing directed by SviCas3",
-    "url": "http://arxiv.org/abs/2305.05861v1",
-    "summary": "Here is a 3-5 line summary of the article:\n\nThe SviCas3 enzyme from the Streptomyces virginiae IBL14 subtype I-B-Svi Cas system is a versatile RNA-guided and DNA-guided DNA endonuclease suitable for efficient HDR-directed gene and base editing in eukaryotic cells. Notably, DNA-guided SviCas3 editing is as efficient as RNA-guided editing, and does not require a proto-spacer-adjacent motif. This discovery expands our understanding of CRISPR-Cas systems and provides a new tool for DNA-guided gene editing and base editing."
+    "title": "WGTDA: A Topological Perspective to Biomarker Discovery in Gene\n  Expression Data",
+    "url": "http://arxiv.org/abs/2402.08807v1",
+    "summary": "Here is a concise summary of the article:\n\nThis study introduces Weighted Gene Topological Data Analysis (WGTDA), a novel framework that uses topological principles to identify gene interactions and biomarker features. WGTDA outperforms traditional methods, such as WGCNA, in predicting survival probability by uncovering intricate gene-to-gene relationships often overlooked by conventional correlation-based analyses."
   },
   {
-    "title": "CRISPR-GPT: An LLM Agent for Automated Design of Gene-Editing\n  Experiments",
-    "url": "http://arxiv.org/abs/2404.18021v1",
-    "summary": "Here is a 3-5 line summary of the article:\n\nResearchers have developed CRISPR-GPT, a Large Language Model (LLM) agent that automates and enhances the design of CRISPR-based gene-editing experiments. CRISPR-GPT leverages LLM reasoning to select CRISPR systems, design guide RNAs, and recommend delivery methods and validation experiments. This tool aims to assist non-expert researchers in gene-editing experiments and bridge the gap between beginners and CRISPR genome engineering techniques."
+    "title": "Evaluation of network-guided random forest for disease gene discovery",
+    "url": "http://arxiv.org/abs/2308.01323v1",
+    "summary": "Here is a 3-5 line summary of the article:\n\nIntegrating gene network information into random forest (RF) algorithms does not improve disease prediction, but enhances disease gene discovery when disease genes form modules. However, using network information can lead to spurious gene selection, particularly for hub genes, when disease status is independent of network genes. Network-guided RF can identify genes from relevant pathways, resulting in a more connected module of identified genes."
   },
   {
-    "title": "The pattern and process of gene family evolution",
-    "url": "http://arxiv.org/abs/1102.2331v1",
-    "summary": "Here is a 3-5 line summary of the article:\n\nResearchers analyzed large-scale databases of homologous gene families to understand gene family evolution. They found that gene family size distributions across different species and domains of life exhibit similar shapes, best described by models where gene death rates exceed birth rates, but new families continually emerge. Additionally, probabilistic reconciliation methods revealed that most birth events in prokaryotes result from gene transfer."
+    "title": "KatzDriver: A network Based method to predict cancer causal genes in GR\n  Network",
+    "url": "http://arxiv.org/abs/2003.06266v1",
+    "summary": "Here is a concise summary of the article:\n\nThis study proposes a network-based approach to identify Cancer Driver Genes (CDGs) by analyzing the relative importance of each gene in propagating and absorbing anomalies in the network. The method outperforms 19 previous methods in terms of accuracy, precision, and number of recognized CDGs, providing a promising tool for predicting genes that contribute to cancer development."
   }
 ]

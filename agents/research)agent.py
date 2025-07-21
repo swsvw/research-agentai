@@ -10,7 +10,7 @@ load_dotenv()
 
 llm = ChatOpenAI(
     temperature=0,
-    model_name="llama-3.3-70b-versatile",  # or another Groq-supported model
+    model_name="llama-3.3-70b-versatile", 
     openai_api_base=os.getenv("OPENAI_API_BASE"),
     openai_api_key=os.getenv("OPENAI_API_KEY")
 )
