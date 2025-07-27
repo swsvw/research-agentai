@@ -24,7 +24,7 @@ def fetch_science_articles(query: str):
     return results
 
 
-def summarize_article_content(content: str) -> str:
+def summarize_article_content(content: str, client) -> str:
     prompt = f"""
     You are a scientific summarizer.
     Given this raw content from a research article, extract the core scientific insight in 3–5 lines.
@@ -34,5 +34,5 @@ def summarize_article_content(content: str) -> str:
 
     Summary:
     """
-    response = groq_llm(prompt)
-    return response.content.strip()
+    return groq_llm(prompt, client)
+

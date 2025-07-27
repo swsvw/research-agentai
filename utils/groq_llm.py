@@ -1,28 +1,15 @@
-# utils/groq_llm.py
-
-import os
-
 from groq import Groq
-from langchain_core.messages import HumanMessage
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-def groq_llm(prompt: str):
+# Creates a Groq client with the user's API key
+def get_groq_client(api_key: str):
+    return Groq(api_key=api_key)
+
+# Calls the Groq model using the provided prompt and client
+def groq_llm(prompt: str, client):
     chat_completion = client.chat.completions.create(
-        model="llama3-70b-8192",
-        messages=[
-            {
-                "role": "system",
-                "content": "You are a scientific summarizer. Summarize technical research articles concisely."
-            },
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ],
-        temperature=0.2,
-        max_tokens=512,
+        model="llama3-8b-8192",
+        messages=[{"role": "user", "content": prompt}]
     )
-    return chat_completion.choices[0].message
-
+    return chat_completion.choices[0].message.content.strip()
 

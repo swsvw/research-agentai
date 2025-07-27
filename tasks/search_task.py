@@ -1,41 +1,33 @@
 # tasks/search_task.py
-
 import json
+
+import streamlit as st
 
 from tools.science_tool import (fetch_science_articles,
                                 summarize_article_content)
+from utils.groq_llm import get_groq_client
 
 
-def run_task(user_query: str):
-    print(f"🔍 Running research task for: {user_query}")
-
+def run_task(user_query: str, api_key):
     articles = fetch_science_articles(user_query)
-    if not articles:
-        print("❌ No relevant articles found.")
-        return
+    enriched = []
 
-    summaries = []
-    
     for article in articles:
-        content = article.get("content")
-        if not content:
-            continue
-        summary = summarize_article_content(content)
-        summaries.append({
-            "title": article.get("title"),
-            "url": article.get("url"),
-            "summary": summary
-        })
+        content = article.get("content", "")
+        if content:
+            client = get_groq_client(api_key)  # ✅ get proper Groq object
+            summary = summarize_article_content(content, client)
+
+            article["summary"] = summary
+        enriched.append(article)
 
     with open("science_articles.json", "w") as f:
-        json.dump(summaries, f, indent=2)
+        json.dump(enriched, f, indent=2)
+with open("science_articles.json", "r") as f:
+    data = json.load(f)
 
-    print("✅ Research task completed. Summaries saved to science_articles.json")
-    print("\n🔬 Top Research Summaries:\n")
-    for i, article in enumerate(summaries, 1):
-        print(f"{i}. 📝 Title: {article['title']}")
-        print(f"🔗 URL: {article['url']}")
-        print(f"📄 Summary:\n{article['summary']}\n")
-        print("-" * 80)
-
-    
+st.subheader("📄 Article Summaries")
+for article in data:
+    st.markdown(f"### [{article['title']}]({article['url']})")
+    st.markdown(f"**Summary:** {article['summary']}")
+    st.markdown("---")

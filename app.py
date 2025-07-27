@@ -1,20 +1,34 @@
 import json
+import os
 
-from flask import Flask, render_template, request
+import streamlit as st
 
 from tasks.search_task import run_task
 
-app = Flask(__name__)
+st.title("🔬 Research Agent")
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    summaries = []
-    if request.method == 'POST':
-        query = request.form['query']
-        run_task(query) 
-        with open("science_articles.json") as f:
-            summaries = json.load(f)
-    return render_template('index.html', summaries=summaries)
+# Input API key and research query
+api_key = st.text_input("Enter your Groq API key:", type="password")
+query = st.text_input("Enter your research query:")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if "show_results" not in st.session_state:
+    st.session_state.show_results = False
+
+if st.button("Run Research") and api_key and query:
+    run_task(query, api_key)
+    st.session_state.show_results = True
+
+# Display summaries only if available and triggered
+if st.session_state.show_results:
+    if os.path.exists("science_articles.json"):
+        with open("science_articles.json", "r") as f:
+            data = json.load(f)
+        st.markdown("---")
+        st.subheader("📄 Article Summaries")
+        for article in data:
+            st.markdown(f"### [{article['title']}]({article['url']})")
+            st.markdown(f"**Summary:** {article['summary']}")
+            st.markdown("---")
+if not st.session_state.get("just_loaded"):
+    st.session_state.show_results = False
+    st.session_state.just_loaded = True
