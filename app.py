@@ -7,7 +7,6 @@ from tasks.search_task import run_task
 
 st.title("🔬 Research Agent")
 
-# Input API key and research query
 api_key = st.text_input("Enter your Groq API key:", type="password")
 query = st.text_input("Enter your research query:")
 
@@ -17,8 +16,6 @@ if "show_results" not in st.session_state:
 if st.button("Run Research") and api_key and query:
     run_task(query, api_key)
     st.session_state.show_results = True
-
-# Display summaries only if available and triggered
 if st.session_state.show_results:
     if os.path.exists("science_articles.json"):
         with open("science_articles.json", "r") as f:

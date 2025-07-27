@@ -1,4 +1,4 @@
-# tasks/search_task.py
+
 import json
 
 import streamlit as st
@@ -15,7 +15,7 @@ def run_task(user_query: str, api_key):
     for article in articles:
         content = article.get("content", "")
         if content:
-            client = get_groq_client(api_key)  # ✅ get proper Groq object
+            client = get_groq_client(api_key)
             summary = summarize_article_content(content, client)
 
             article["summary"] = summary
